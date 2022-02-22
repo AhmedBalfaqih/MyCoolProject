@@ -1,0 +1,8 @@
+#WelcomeSection {
+  height: 100vh;
+  background-image: url(../images/VALO-BG.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
