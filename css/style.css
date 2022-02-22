@@ -1,8 +1,194 @@
+@font-face {
+  font-family: "MarkPro-Bold";
+  src: url("../Fonts/Mark Pro Bold.ttf");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+h1 {
+  align-self: flex-start;
+  margin-left: 11vw;
+  font-size: 56px;
+  margin-bottom: 0;
+  color: #fe404e;
+}
+
+h3 {
+  margin: 0;
+  color: white;
+}
+
+h5 {
+  color: #ffffff8e;
+}
+
+#ValoWordLogo {
+  height: 128px;
+  margin: 32px 0 64px 0;
+}
+
+button {
+  font-family: inherit;
+}
+
+#PLAYNOW-S {
+  width: 128px;
+  height: 40px;
+  border: none;
+  font-size: 16px;
+  color: white;
+}
+
+#PLAYNOW-B {
+  width: 256px;
+  height: 64px;
+  border: none;
+  font-size: 24px;
+  padding: 0;
+  color: white;
+}
+
+.animation {
+  background: linear-gradient(to left, #fe404e 50%, #dd3742 50%);
+  background-size: 200% 100%;
+  transition: all 0.5s ease;
+  background-position: right bottom;
+}
+
+.animation:hover {
+  background-position: left bottom;
+}
+
+body {
+  width: 100vw;
+  margin: 0;
+  font-family: "MarkPro-Bold", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  height: 80px;
+  align-items: center;
+  background-color: black;
+}
+
+nav img.logo {
+  width: 64px;
+}
+
+nav ul.Navlist {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul.Navlist li {
+  font-size: 16px;
+  display: inline;
+  margin: 0;
+  padding: 12px 24px 12px 24px;
+  border-radius: 5%;
+}
+
+li:not(li:last-child):hover {
+  background-color: #1a1a1a;
+}
+
 #WelcomeSection {
   height: 100vh;
   background-image: url(../images/VALO-BG.png);
-  background-attachment: fixed;
   background-position: center;
-  background-size: cover;
+  background-size: fill;
+}
+
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../images/Overlay.png);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 640px;
+  background-color: #121212;
+}
+
+#media .MediaIMGS {
+  width: 100%;
+}
+
+#media .MediaList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 64px;
+}
+
+#media .MediaList .MediaCard {
+  width: 25%;
+  margin: 0 15px 0 15px;
+}
+
+#media span {
+  color: #fe404e;
+}
+
+#news h1 {
   color: white;
+}
+
+#news {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 640px;
+  background-color: #fe404e;
+}
+
+#news .NewsIMGS {
+  width: 100%;
+}
+
+#news .NewsList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 64px;
+}
+
+#news .NewsList .NewsCard {
+  width: 25%;
+  margin: 0 15px 0 15px;
+}
+
+#news span {
+  color: #fe404e;
+}
+
+.Button-M {
+  height: 70px;
+  width: 100px;
+}
+
+.contactForm {
+  height: 11000px;
 }

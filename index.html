@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Website title -->
-    <title>ValorentIsCool</title>
+    <title>ValorantIsCool</title>
 
     <!-- Website icon -->
     <link rel="icon" href="./images/ValoIcon.png" />
@@ -14,6 +14,7 @@
     <!-- CSS link -->
     <link rel="stylesheet" href="./css/style.css" />
 </head>
+
 <body>
     <!-- Navbar -->
     <nav>
@@ -21,13 +22,13 @@
         <img src="./images/ValoLogo.svg" alt="Valorent Logo" class="logo" />
 
         <!-- Nav iteams -->
-        <ul class="navList">
-            <li><a href="#media">MEDIA</a></li>
-            <li><a href="#news">NEWS</a></li>
-            <li><a href="#ranks">RANKS</a></li>
-            <li><a href="#agents">AGENTS</a></li>
-            <li><a href="#leaderboards">LEADERBOARDS</a></li>
-            <li><button id="PLAYNOW-S" class="Button">PLAY NOW</button></li>
+        <ul class="Navlist">
+           <li class="Box"><a href="#news">NEWS</a></li>
+           <li class="Box"><a href="#media">MEDIA</a></li>
+           <li class="Box"><a href="#ranks">RANKS</a></li>
+           <li class="Box"><a href="#agents">AGENTS</a></li>
+           <li class="Box"><a href="#leaderboards">LEADERBOARDS</a></li>
+           <li><button id="PLAYNOW-S" class="Button animation">PLAY NOW</button></li>
         </ul>
     </nav>
 
@@ -37,16 +38,85 @@
         <!-- Welcome Section -->
         <section id="WelcomeSection">
             <!-- Overlay -->
-            <div id="overlay">
+            <div class="overlay">
                 <!-- Title -->
-                <h5>A 5v5 character-based tactical shooter</h5>
-
+                <h3>A 5v5 character-based tactical shooter</h3>
                 <!-- ValoWordLogo -->
-                <img src="./images/ValoWordLogo.svg" alt="ValoWordLogo" class="ValoWordLogo" />
-
+                <img src="./images/ValoWordLogo.svg" id="ValoWordLogo"/>
                 <!-- Play Now Button-->
-                <button id="PLAYNOW-B" class="Button">PLAY NOW</button>
+                <button id="PLAYNOW-B" class="Button animation">PLAY NOW</button>
             </div>
+        </section>
+
+        <section id="media">
+            <H1>MEDIA</H1>
+            <div class="MediaList">
+                <article class="MediaCard">
+                    <img src="./images/Brimstone_Raze_1920x1080.jpg" alt="Brimstone and Raze" class="MediaIMGS" />
+                    <h5 class="muted date">12/02/2022    -    <span>GAME UPDATE</span></h5>
+                    <h3 class="TitleCenter">Title</h3>
+                </article>
+
+                <article class="MediaCard">
+                    <img src="./images/Brimstone_Raze_1920x1080.jpg" alt="Brimstone and Raze" class="MediaIMGS" />
+                    <h5 class="muted date">12/02/2022    -    <span>GAME UPDATE</span></h5>
+                    <h3 class="TitleCenter">Title</h3>
+                </article>
+
+                <article class="MediaCard">
+                    <img src="./images/Brimstone_Raze_1920x1080.jpg" alt="Brimstone and Raze" class="MediaIMGS" />
+                    <h5 class="muted date">12/02/2022    -    <span>GAME UPDATE</span></h5>
+                    <h3 class="TitleCenter">Title</h3>
+                </article>
+            </div>
+        </section>
+
+        <section id="news">
+            <H1>NEWS</H1>
+            <div class="NewsList">
+                <article class="NewsCard">
+                    <img src="./images/Brimstone_Raze_1920x1080.jpg" alt="Brimstone and Raze" class="NewsIMGS" />
+                    <h5 class="muted date">12/02/2022    -    <span>GAME UPDATE</span></h5>
+                    <h3 class="TitleCenter">Title</h3>
+                </article>
+
+                <article class="NewsCard">
+                    <img src="./images/Brimstone_Raze_1920x1080.jpg" alt="Brimstone and Raze" class="NewsIMGS" />
+                    <h5 class="muted date">12/02/2022    -    <span>GAME UPDATE</span></h5>
+                    <h3 class="TitleCenter">Title</h3>
+                </article>
+
+                <article class="NewsCard">
+                    <img src="./images/Brimstone_Raze_1920x1080.jpg" alt="Brimstone and Raze" class="NewsIMGS" />
+                    <h5 class="muted date">12/02/2022    -    <span>GAME UPDATE</span></h5>
+                    <h3 class="TitleCenter">Title</h3>
+                </article>
+            </div>
+            
+        </section>
+
+        <section class="contactFrom">
+            <form>
+                <div class="form-group">
+                    <lebel for="contactName"> Your Name: </lebel>
+                    <input type="text" name="contactName" placeholder="Name" id="contactName" />
+                </div>
+
+                <div class="form-group">
+                    <label for="contactEmail"> Your Email: </label>
+                    <input type="email" name="contactEmail" placeholder="Email" id="contactEmail" />
+                </div>
+
+                <div class="form-group">
+                    <label for="contactMSG"> Your massege: </label>
+                    <textarea name="contactMSG" id="contactMSG" />
+                </div>
+
+                <a><button class="Button-M">SEND</button></a>
+                    <button class="Button-M">SEND</button>
+
+                    <h1>HHHHHH</h1>
+            </form>
         </section>
     </main>
 </body>
