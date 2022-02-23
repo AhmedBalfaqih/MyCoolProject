@@ -23,12 +23,15 @@
 
         <!-- Nav iteams -->
         <ul class="Navlist">
-           <li class="Box"><a href="#news">NEWS</a></li>
            <li class="Box"><a href="#media">MEDIA</a></li>
+           <li class="Box"><a href="#news">NEWS</a></li>
+           <li class="Box"><a href="#contactForm">CONTACT</a></li>
+           <!--
            <li class="Box"><a href="#ranks">RANKS</a></li>
            <li class="Box"><a href="#agents">AGENTS</a></li>
            <li class="Box"><a href="#leaderboards">LEADERBOARDS</a></li>
-           <li><button id="PLAYNOW-S" class="Button animation">PLAY NOW</button></li>
+           -->
+           <li><button class="animation Button-S">PLAY NOW</button></li>
         </ul>
     </nav>
 
@@ -44,7 +47,7 @@
                 <!-- ValoWordLogo -->
                 <img src="./images/ValoWordLogo.svg" id="ValoWordLogo"/>
                 <!-- Play Now Button-->
-                <button id="PLAYNOW-B" class="Button animation">PLAY NOW</button>
+                <button class="animation Button-B">PLAY NOW</button>
             </div>
         </section>
 
@@ -53,19 +56,19 @@
             <div class="MediaList">
                 <article class="MediaCard">
                     <img src="./images/Brimstone_Raze_1920x1080.jpg" alt="Brimstone and Raze" class="MediaIMGS" />
-                    <h5 class="muted date">12/02/2022    -    <span>GAME UPDATE</span></h5>
+                    <div class="info"> <span class="date"><h5>12/02/2022</h5></span><span class="type"><h5>GAME UPDATE</h5></span></div>
                     <h3 class="TitleCenter">Title</h3>
                 </article>
 
                 <article class="MediaCard">
                     <img src="./images/Brimstone_Raze_1920x1080.jpg" alt="Brimstone and Raze" class="MediaIMGS" />
-                    <h5 class="muted date">12/02/2022    -    <span>GAME UPDATE</span></h5>
+                    <div class="info"> <span class="date"><h5>12/02/2022</h5></span><span class="type"><h5>GAME UPDATE</h5></span></div>
                     <h3 class="TitleCenter">Title</h3>
                 </article>
 
                 <article class="MediaCard">
                     <img src="./images/Brimstone_Raze_1920x1080.jpg" alt="Brimstone and Raze" class="MediaIMGS" />
-                    <h5 class="muted date">12/02/2022    -    <span>GAME UPDATE</span></h5>
+                    <div class="info"> <span class="date"><h5>12/02/2022</h5></span><span class="type"><h5>GAME UPDATE</h5></span></div>
                     <h3 class="TitleCenter">Title</h3>
                 </article>
             </div>
@@ -76,19 +79,19 @@
             <div class="NewsList">
                 <article class="NewsCard">
                     <img src="./images/Brimstone_Raze_1920x1080.jpg" alt="Brimstone and Raze" class="NewsIMGS" />
-                    <h5 class="muted date">12/02/2022    -    <span>GAME UPDATE</span></h5>
+                    <div class="info"> <span class="date"><h5>12/02/2022</h5></span><span class="type"><h5>GAME UPDATE</h5></span></div>
                     <h3 class="TitleCenter">Title</h3>
                 </article>
 
                 <article class="NewsCard">
                     <img src="./images/Brimstone_Raze_1920x1080.jpg" alt="Brimstone and Raze" class="NewsIMGS" />
-                    <h5 class="muted date">12/02/2022    -    <span>GAME UPDATE</span></h5>
+                    <div class="info"> <span class="date"><h5>12/02/2022</h5></span><span class="type"><h5>GAME UPDATE</h5></span></div>
                     <h3 class="TitleCenter">Title</h3>
                 </article>
 
                 <article class="NewsCard">
                     <img src="./images/Brimstone_Raze_1920x1080.jpg" alt="Brimstone and Raze" class="NewsIMGS" />
-                    <h5 class="muted date">12/02/2022    -    <span>GAME UPDATE</span></h5>
+                    <div class="info"> <span class="date"><h5>12/02/2022</h5></span><span class="type"><h5>GAME UPDATE</h5></span></div>
                     <h3 class="TitleCenter">Title</h3>
                 </article>
             </div>
@@ -96,21 +99,26 @@
         </section>
 
         <section id="contactForm">
+            <h1 id="contact-title">CONTACT</h1>
             <form>
                 <div class="form-group">
-                    <label for="contactName">Your Name:</label>
-                    <input type="text" name="contactName" placeholder="Name" id="contactName" />
-
-                    <label for="contactName">Your Name:</label>
-                    <input type="text" name="contactName" placeholder="Name" id="contactName" />
-                    
-                    <label for="contactName">Your Name:</label>
-                    <textarea name="comment" form="usrform">Enter text here...</textarea>
-                    <h1>HHH</h1>
-
-                    <button>SEND</button>
+                    <label for="contactName"><span>Your Name:</span></label>
+                    <input type="text" name="contactName" placeholder="Name" id="contactName" class="Form-Animation" />
                 </div>
-                
+                <div class="form-group">
+                    <label for="contacEmail"><span>Email:</span></label>
+                    <input type="text" name="contacEmail" placeholder="Email" id="contacEmail" class="Form-Animation" />
+                </div>
+
+                <div class="form-group">
+                    <label for="contactMSG"><span>Your Massage:</span></label>
+                    <textarea name="contactMSG" id="contactMSG" form="usrform" class="Form-Animation">Enter your massage here...</textarea>
+                </div>
+
+                <div class="text-right">
+                    <button class="animation Button-S">SEND</button>
+                </div>
+
             </form>
         </section>
     </main>

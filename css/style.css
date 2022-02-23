@@ -20,6 +20,7 @@ h1 {
   align-self: flex-start;
   margin-left: 11vw;
   font-size: 56px;
+  margin-top: 64px;
   margin-bottom: 0;
   color: #fe404e;
 }
@@ -30,11 +31,12 @@ h3 {
 }
 
 h5 {
+  margin: 10px 0 15px 0;
   color: #ffffff8e;
 }
 
 #ValoWordLogo {
-  height: 128px;
+  width: 80%;
   margin: 32px 0 64px 0;
 }
 
@@ -42,7 +44,7 @@ button {
   font-family: inherit;
 }
 
-#PLAYNOW-S {
+.Button-S {
   width: 128px;
   height: 40px;
   border: none;
@@ -50,7 +52,7 @@ button {
   color: white;
 }
 
-#PLAYNOW-B {
+.Button-B {
   width: 256px;
   height: 64px;
   border: none;
@@ -105,6 +107,42 @@ li:not(li:last-child):hover {
   background-color: #1a1a1a;
 }
 
+@media (max-width: 581px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    height: 160px;
+    align-items: center;
+    background-color: black;
+  }
+
+  nav img.logo {
+    width: 80px;
+  }
+}
+
+@media (max-width: 517px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    height: 160px;
+    align-items: center;
+    background-color: black;
+  }
+
+  nav img.logo {
+    width: 80px;
+  }
+
+  ul.Navlist {
+    align-content: center;
+  }
+
+  .Button-S {
+    align-self: center;
+  }
+}
+
 #WelcomeSection {
   height: 100vh;
   background-image: url(../images/VALO-BG.png);
@@ -127,7 +165,6 @@ li:not(li:last-child):hover {
   flex-direction: column;
   align-items: center;
   width: 100vw;
-  height: 640px;
   background-color: #121212;
 }
 
@@ -139,7 +176,7 @@ li:not(li:last-child):hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 64px;
+  margin: 64px 0 128px 0;
 }
 
 #media .MediaList .MediaCard {
@@ -160,7 +197,6 @@ li:not(li:last-child):hover {
   flex-direction: column;
   align-items: center;
   width: 100vw;
-  height: 640px;
   background-color: #fe404e;
 }
 
@@ -172,7 +208,7 @@ li:not(li:last-child):hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 64px;
+  margin: 64px 0 128px 0;
 }
 
 #news .NewsList .NewsCard {
@@ -180,8 +216,12 @@ li:not(li:last-child):hover {
   margin: 0 15px 0 15px;
 }
 
-#news span {
-  color: #fe404e;
+p {
+  display: inline;
+}
+.info {
+  display: flex;
+  flex-direction: row;
 }
 
 .Button-M {
@@ -189,6 +229,70 @@ li:not(li:last-child):hover {
   width: 100px;
 }
 
-.contactForm {
-  height: 11000px;
+#contact-title {
+  align-self: center;
+  text-align: center;
+  margin: 64px 0 64px 0;
 }
+
+#contactForm {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  background-color: #e9e5dd;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  /* top right bottom left */
+  margin: 0px auto 0;
+  background-color: #e9e5dd;
+  border: 1px solid #d7d0c1;
+  padding: 16px;
+  margin-bottom: 64px;
+}
+
+div.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 16px 0;
+}
+
+.form-group label {
+  font-size: 16px;
+  color: #1a1a1a;
+  margin-bottom: 4px;
+}
+
+.form-group input {
+  color: #000000;
+  height: 40px;
+  border: none;
+  background-color: #dfd9cd;
+  padding: 0 0 0 8px;
+}
+
+.form-group textarea {
+  font-family: "MarkPro-Bold";
+  color: rgb(158, 158, 158);
+  padding: 8px 8px 8px 8px;
+  background-color: #dfd9cd;
+  border: none;
+}
+
+.Form-Animation:hover {
+  background-color: #d7d0c1;
+}
+
+.Form-Animation:focus {
+  background-color: #d7d0c1;
+  outline-color: #fe404e;
+}
+
+.text-right {
+  text-align: right;
+}
+/* padding-left: 7px;
+border: 1px solid #fe404e; */
