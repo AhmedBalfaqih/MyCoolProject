@@ -91,6 +91,8 @@ nav img.logo {
 }
 
 nav ul.Navlist {
+  display: inline-flex;
+  align-items: center;
   margin: 0;
   padding: 0;
 }
@@ -109,8 +111,9 @@ li:not(li:last-child):hover {
 
 @media (max-width: 581px) {
   nav {
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
+    width: 100vw;
     height: 160px;
     align-items: center;
     background-color: black;
@@ -123,23 +126,25 @@ li:not(li:last-child):hover {
 
 @media (max-width: 517px) {
   nav {
-    display: flex;
-    flex-direction: column;
-    height: 160px;
-    align-items: center;
-    background-color: black;
-  }
-
-  nav img.logo {
-    width: 80px;
+    width: 100vw;
+    height: 256px;
   }
 
   ul.Navlist {
-    align-content: center;
+    width: 100vw;
+    height: 128px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
+.menu-div {
+  margin-left: 24px;
+  padding: 16px;
+}
+
   .Button-S {
-    align-self: center;
+    margin-top: 24px;
   }
 }
 
